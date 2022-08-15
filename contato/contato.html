@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../produtos/style.css">
+    <link rel="icon" href="../imagens/barbearia-moderna.png">
+    <title>Contato Barbearia</title>
+</head>
+
+<body>
+
+    <header id="cabecalho">
+        <div class="caixa">
+            <img class="animate" src="../produtos/img/logo.png" alt="logo-barbearia">
+            <nav>
+                <ul>
+                    <a href="../index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="../produtos/produtos.html">
+                        <li>Produtos</li>
+                    </a>
+                    <a href="../contato/contato.html">
+                        <li>Contato</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <!-- O atributo for faz um tipo de link entre a label e o input . Logo o for tem que apontar para o ID do input . -->
+            <label for="nomeSobrenome">Nome e Sobrenome</label>
+            <!--representa uma legenda para um item em uma interface de usuário. o label funciona como uma etiqueta para o input -->
+            <input type="text" id="nomeSobrenome" placeholder="William Filipi" class="input-padrao" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="contato@gmail.com" class="input-padrao" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(55) XXXXX-XXXX">
+
+
+            <fieldset>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" cols="60" rows="10"></textarea>
+                <!--cols é o numero de coluna e rows o numero de linha-->
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="email-radio"><input type="radio" value="email" name="contato"
+                        id="email-radio">E-mail</label>
+
+                <label for="telefone-radio"><input type="radio" value="ligacao" name="contato"
+                        id="telefone-radio">Ligação</label>
+
+                <label for="whatsapp-radio"><input type="radio" value="whatsapp" name="contato" id="whatsapp-radio"
+                        checked>WhatsApp</label>
+
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select name="horario" id="horario">
+                        <option value="manha">Manhã</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noite">Noite</option>
+                    </select>
+                </fieldset>
+                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por
+                    e-mail?</label>
+
+
+            </fieldset>
+
+            <input type="submit" value="Confirmar" class="confirmar">
+        </form>
+
+        <table> <!-- As tags <thead>, <tbody> e <tfoot> ajudam a deixar o conteúdo da tabela mais bem dividido e mais semântico.-->
+            <thead>
+                <tr>
+                    <td>Dia</td>
+                    <td>Horário</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+
+
+    <footer>
+        <img class="animate" src="../produtos/img/logo-branco.png" alt="logo-barbearia">
+        <a href="https://github.com/williamfilipi" class="copy">
+            <p>&copy;Barbearia William Filipi</p>
+        </a>
+    </footer>
+
+</body>
+
+</html>
