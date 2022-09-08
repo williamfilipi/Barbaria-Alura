@@ -10,6 +10,7 @@ body{
     background-image: linear-gradient(to left, #494644, #928f8d);
     animation: degrade 2s infinite alternate;
     background-size: 500% 100%;
+    box-sizing: content-box;
 }
 
 @keyframes degrade {
@@ -41,125 +42,30 @@ nav li{
 nav a {
     text-transform: uppercase;
     color: #D3BF9B;
-    font-weight: bold; /*Deixa a fonte mais grossa, bold colocamos em negrito*/
-    text-decoration: none; /*Retira on underline*/
-    font-size: 22px; /*Altura da fonte*/
+    font-weight: bold; 
+    text-decoration: none; 
+    font-size: 22px; 
 }
-
 nav a:hover{
     color: #d1b37b;
     text-decoration: underline;
 }
-
-CRIAÇÃO DE CARROSEL
-/* .slider {
-    margin: 0 auto;
-    width: 800px;
-    height: 400px;
-    /* overflow: hidden; }*/
-/*
-
-.slides{
-    width: 400%;
-    height: 400px;
-    display: flex;
-}
-
-.slides input{
-    display: none;
-}
-
-.slide {
-    width: 25%;
-    position: relative;
-}
-
-.slide img {
-    width: 800px;
-}
-
-.manual-navigation {
-    position: relative;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn{
-    border: 2px solid rgb(240, 5, 5);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.manual-btn:not(:last-child){
-    margin-right: 40px;
-}
-
-.manual-btn:hover{
-    background-color: rgb(250, 19, 19);
-}
-
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-    margin-left: -25%;
-} */
-
-/* #radio1:checked ~ .first{
-    margin-left: 0;
-} */
-
-/* FIM DE CARROSEL */
-
 
 .principal{
     background: #cccccc;
     padding: 35px;
 }
 
-.titulo{
-    text-align: center;
-}
-
-p{
-    text-align: center;
-}
-
-#missao{
-    font-size: 20px;
-}
-
-em strong {
-    color: red;
-}
-
-.itens{
-    font-style: italic;
-    display: inline-block;
-    vertical-align: top; /*PARA ALINHAR O CONTEUDO DE TEXTO NO TOP DA DIV */
-    margin-right: 15%;
-}
-
-.beneficios{
-    background: white;
-    padding: 20PX;
-}
-
-.imgBeneficios{
-    width: 50%;
-}
-
-
 footer{
     text-align: center;
     background: url("../produtos/img/bg.jpg");
     padding: 40px 0;
 }
+
+footer p {
+    color: #D3BF9B;
+}
+
 .animate{
     transform: translateY(0);
     height: 200px;
@@ -172,7 +78,7 @@ footer{
     }
 
     50%{
-        transform: translateY(-10px);
+        transform: translateY(-30px);
     }
 
     100%{
