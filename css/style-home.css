@@ -13,6 +13,10 @@ body{
     box-sizing: content-box;
 }
 
+.carrosel{
+    margin: 15px 0px 15px 0px;
+}
+
 @keyframes degrade {
     from{
         background-position-x: 0%;
